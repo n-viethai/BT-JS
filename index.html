@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+    <div class="wrapper d-flex flex-column align-items-center">
+        <div class="col-sm-10">
+            <h1 class=" mb-4 text-uppercase bg-info p-2 fw-bold">Bài tập JS buổi 1</h1>
+            <!-- bài 1 -->
+            <h4 class="mb-3 bg-success p-2 fw-bold text-white">Bài tập 1 : tính tiền lương nhân viên</h4>
+            <div class="row mb-2">
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100 ">
+                        <span class=" d-block fw-bold m-2 " >INPUT :</span>
+                        <ul>
+                            <li>Số ngày làm của nhân viên : n </li>
+                            <li>Tiền lương mỗi ngày : 100.0000 </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100">
+                        <span class=" d-block fw-bold m-2 "> PROCESS</span>
+                        <ul>
+                            <li>Tạo biến x <br/></li>
+                            <li>Gán giá trị số ngày làm của nhân viên cho biến x</li>
+                            <li>Tạo biến tiền lương y</li>
+                            <li>Tính lương nhân viên theo công thức : y = x*100000</li>
+                            <li>Xuât giá trị ra input</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100 ">
+                        <span class=" d-block fw-bold m-2"> OUTPUT</span>
+                        <ul>
+                            <li>Kết quả lương của nhân viên.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label d-block">Tiền lương một ngày : 100.000 VNĐ</label>
+                <label class="form-label d-block">Số ngày đi làm của nhân viên</label>
+                <input type="text" class="form-control" id="dayWork"/>
+                <label class="form-label d-block">Tiền lương :</label>
+                <input type="text" class="form-control" id="salary"/>
+                <button class=" mt-4 btn btn-danger" id="btnCalSalary">Tính tiền lương </button>
+            </div>
+        </div>
+
+        <!-- bài 2 -->
+        <div class="col-sm-10">
+            <h4 class="mb-3 bg-success p-2 fw-bold text-white">Bài tập 2 : tính giá trị trung bình của 5 số</h4>
+            <div class="row mb-2">
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100 ">
+                        <span class=" d-block fw-bold m-2 " >INPUT :</span>
+                        <ul>
+                            <li>Giá trị số thứ nhất</li>
+                            <li>Giá trị số thứ hai</li>
+                            <li>Giá trị số thứ ba</li>
+                            <li>Giá trị số thứ tư</li>
+                            <li>Giá trị số thứ năm</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100">
+                        <span class=" d-block fw-bold m-2 "> PROCESS</span>
+                        <ul>
+                            <li>Tạo 5 biến : x1,x2,x3,x4,x5</li>
+                            <li>Tạo biến giá trị trung bình : TBC</li>
+                            <li>Gán giá trị của từng số người dùng nhập vào tương ứng cho 5 biến</li>
+                            <li>Tính giá trị trung bình theo công thức : TBC = (x1+x2+x3+x4+x5) / 5</li>
+                            <li>Xuât giá trị trung bình của 5 số ra input</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100 ">
+                        <span class=" d-block fw-bold m-2"> OUTPUT</span>
+                        <ul>
+                            <li> Giá trị trung bình của 5 số.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label d-block">Nhập số thứ 1</label>
+                <input type="text" class="form-control" id="firstNumber"/>
+                <label class="form-label d-block">Nhập số thứ 2</label>
+                <input type="text" class="form-control" id="secondNumber"/>
+                <label class="form-label d-block">Nhập số thứ 3</label>
+                <input type="text" class="form-control" id="thirdNumber"/>
+                <label class="form-label d-block">Nhập số thứ 4</label>
+                <input type="text" class="form-control" id="fourdNumber"/>
+                <label class="form-label d-block">Nhập số thứ 5</label>
+                <input type="text" class="form-control" id="fifthNumber"/>
+                <label class="form-label d-block">Giá trị trung bình</label>
+                <input type="text" class="form-control" id="averageValue"/>
+                <button class=" mt-4 btn btn-danger" id="average">Tính trung bình</button>
+            </div>
+        </div>
+
+        <!-- bài 3 -->
+        <div class="col-sm-10">
+            <h4 class="mb-3 bg-success p-2 fw-bold text-white ">Bài tập 3 : Quy đổi tiền</h4>
+            <div class="row mb-2">
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100 ">
+                        <span class=" d-block fw-bold m-2 " >INPUT :</span>
+                        <ul>
+                            <li>Tổng tiền USD muốn quy đổi.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100">
+                        <span class=" d-block fw-bold m-2 "> PROCESS</span>
+                        <ul>
+                            <li>Tạo biến x</li>
+                            <li>Gán giá trị tổng tiền quy đổi cho x</li>
+                            <li>Tạo biến tổng tiền sau quy đổi y</li>
+                            <li>Tính tiền quy đổi theo công thức : y = x*23500</li>
+                            <li>Xuât giá trị của y ra input</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100 ">
+                        <span class=" d-block fw-bold m-2"> OUTPUT</span>
+                        <ul>
+                            <li>Tổng tiền sau khi quy đổi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <p>Giá USD hiện tại : 23.500 VNĐ</p>
+                <label class="form-label d-block">Nhập số tiền (USD) muốn quy đổi</label>
+                <input type="text" class="form-control" id="soTienUSD"/>
+                <label class="form-label d-block">Số tiền sau khi quy đổi</label>
+                <input type="text" class="form-control" id="soTienVND"/>
+                <button class=" mt-4 btn btn-danger" id="moneyConvert">Quy đổi</button>
+            </div>
+        </div>
+
+        <!-- bài 4 -->
+
+        <div class="col-sm-10">
+            <h4 class="mb-3 bg-success p-2 fw-bold text-white">Bài tập 4 : Tính chu vi & diện tích hình chữ nhật</h4>
+            <div class="row mb-2">
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100 ">
+                        <span class=" d-block fw-bold m-2 " >INPUT :</span>
+                        <ul>
+                            <li>Chiều dài hình chữ nhật</li>
+                            <li>Chiều rộng hình chữ nhật</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100">
+                        <span class=" d-block fw-bold m-2 "> PROCESS</span>
+                        <ul>
+                            <li>Tạo biến x,y và gán giá trị tương ứng là chiều dài và chiều rộng HCN</li>
+                            <li>Tạo biến z1,z2 để lưu chu vi và diện tích HCN</li>
+                            <li>Tính chu vi HCN : z1 = (x+y)*2</li>
+                            <li>Tính diện tích HCN : z2 = x*y</li>
+                            <li>Xuât giá trị z1,z2 ra input</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100 ">
+                        <span class=" d-block fw-bold m-2"> OUTPUT</span>
+                        <ul>
+                            <li>Chu vi và diện tích của HCN</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label d-block">Nhập chiều dài hình chữ nhật</label>
+                <input type="text" class="form-control" id="chieuDai"/>
+                <label class="form-label d-block">Nhập chiều rộng hình chữ nhật</label>
+                <input type="text" class="form-control" id="chieuRong"/>
+                <label class="form-label d-block">Chu vi hình chữ nhật</label>
+                <input type="text" class="form-control" id="chuVi"/>
+                <label class="form-label d-block">Diện tích hình chữ nhật</label>
+                <input type="text" class="form-control" id="dienTich"/>
+                <button class=" mt-4 btn btn-danger" id="tinhHCN">Tính chu vi & diện tích</button>
+            </div>
+        </div>
+
+        <!-- bài 5 -->
+
+        <div class="col-sm-10">
+            <h4 class="mb-3 bg-success p-2 fw-bold text-white">Bài tập 5 : Tính tổng các chữ số của số 2 chữ số</h4>
+            <div class="row mb-2">
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100 ">
+                        <span class=" d-block fw-bold m-2 " >INPUT :</span>
+                        <ul>
+                            <li>Số có 2 chữ số</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100">
+                        <span class=" d-block fw-bold m-2 "> PROCESS</span>
+                        <ul>
+                            <li>Tạo biến x và gán giá trị của số nhập vào cho x</li>
+                            <li>Tạo biến y1,y2,z</li>
+                            <li>Tách lấy số hàng chục của x theo công thức : y1 = x/10</li>
+                            <li>Tách lấy số hàng đơn vị của x theo công thức : y2 = x%10</li>
+                            <li>Tổng các chữ số của x theo công thức : z = y1+y2</li>
+                            <li>Xuât giá trị của z ra input.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100 ">
+                        <span class=" d-block fw-bold m-2"> OUTPUT</span>
+                        <ul>
+                            <li>Tổng các chữ số của số có 2 chữ số được nhập vào.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label d-block">Nhập số có 2 chữ số</label>
+                <input type="text" class="form-control" id="numberInput"/>
+                <label class="form-label d-block">Tổng các chữ số</label>
+                <input type="text" class="form-control" id="sumNumber"/>
+                <button class=" mt-4 btn btn-danger" id="tinhTongChuSo">Tính tổng chữ số</button>
+            </div>
+        </div>
+
+        <!--  bài tập Js buổi 2 -->
+
+        <div class="col-sm-10">
+            <h1 class=" mb-4 text-uppercase bg-info p-2 fw-bold">Bài tập JS buổi 2</h1>
+            <!-- bài 1 -->
+            <h4 class="mb-3 bg-success p-2 fw-bold text-white">Bài tập 1 : Sắp xếp thứ tự tăng dần của dãy số</h4>
+            <div class="row mb-2">
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100 ">
+                        <span class=" d-block fw-bold m-2 " >INPUT :</span>
+                        <ul>
+                            <li>Số nguyên thứ 1</li>
+                            <li>Số nguyên thứ 2</li>
+                            <li>Số nguyên thứ 3</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100">
+                        <span class=" d-block fw-bold m-2 "> PROCESS</span>
+                        <ul>
+                            <li>Tạo biến x1,x2,x3</li>
+                            <li>Gán giá trị của z,y,z tương ứng với số thứ 1, số thứ 2, số thứ 3</li>
+                            <li>Tạo biến y1,y2,y3</li>
+                            <li>Đi so sánh lần lượt x1, x2,x3 với nhau </li>
+                            <li>Gán giá trị số lớn nhất cho y1</li>
+                            <li>Gán giá trị số lớn thứ 2 cho y2</li>
+                            <li>Gán giá trị số lớn thứ 3 cho y3</li>
+                            <li>Xuât ra input theo thứ tự y3 y2 y1</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100 ">
+                        <span class=" d-block fw-bold m-2"> OUTPUT</span>
+                        <ul>
+                            <li>Xuất ra dãy số theo thứ tự từ bé đến lớn</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label d-block">Nhập số thứ 1</label>
+                <input type="text" class="form-control" id="soThuNhat"/>
+                <label class="form-label d-block">Nhập số thứ 2</label>
+                <input type="text" class="form-control" id="soThuHai"/>
+                <label class="form-label d-block">Nhập số thứ 3</label>
+                <input type="text" class="form-control" id="soThuBa"/>
+                <label class="form-label d-block">Thứ tự tăng dần của dãy số</label>
+                <input type="text" class="form-control" id="daySoTangDan"/>
+                <button class=" mt-4 btn btn-danger" id="sapXep">Sắp xếp</button>
+            </div>
+        </div>
+
+        <!-- bài 2 -->
+
+        <div class="col-sm-10">
+            <h4 class="mb-3 bg-success p-2 fw-bold text-white">Bài tập 2 : Đưa ra lời chào phù hợp với người sử dụng</h4>
+            <div class="row mb-2">
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100 ">
+                        <span class=" d-block fw-bold m-2 " >INPUT :</span>
+                        <ul>
+                            <li>Người sử dụng máy tính : bố, mẹ, anh trai, em gái.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100">
+                        <span class=" d-block fw-bold m-2 "> PROCESS</span>
+                        <ul>
+                            <li>Tạo biến x</li>
+                            <li>Gán giá trị cho x tương ứng với người sử dụng.</li>
+                            <li>So sánh giá trị của x với giá trị B,M,A,E</li>
+                            <li>Đưa ra lời chào hỏi phù hợp với giá trị của x</li>
+                            <li>Xuât lời chào hỏi ra input.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100 ">
+                        <span class=" d-block fw-bold m-2"> OUTPUT</span>
+                        <ul>
+                            <li>Lời chào hỏi phù hợp với đối tượng người sử dụng</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label d-block">Ai là người đang sử dụng?</label>
+                <select name="user" class="form-select" id="nguoiSuDung">
+                    <option selected value="B">Bố</option>
+                    <option value="M">Mẹ</option>
+                    <option value="A">Anh trai</option>
+                    <option value="E">Em gái</option>
+                </select>
+                <label class="form-label d-block">Lời chào</label>
+                <input type="text" class="form-control" id="loiChao"/>
+                <button class=" mt-4 btn btn-danger" id="btnLoiChao">Nhận lời chào</button>
+            </div>
+        </div>
+
+        <!-- bài 3 -->
+
+        <div class="col-sm-10">
+            <h4 class="mb-3 bg-success p-2 fw-bold text-white">Bài tập 3 : Đếm số chẵn, số lẻ</h4>
+            <div class="row mb-2">
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100 ">
+                        <span class=" d-block fw-bold m-2 " >INPUT :</span>
+                        <ul>
+                            <li>Giá trị số thứ 1</li>
+                            <li>Giá trị số thứ 2</li>
+                            <li>Giá trị số thứ 3</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100">
+                        <span class=" d-block fw-bold m-2 "> PROCESS</span>
+                        <ul>
+                            <li>Tạo biến x1,x2,x3 và gán giá trị tương ứng với giá trị số thứ 1, số thứ 2, số thứ 3.</li>
+                            <li>Tạo biến y1,y2</li>
+                            <li>Tạo biến z1,z2</li>
+                            <li>Lần lượt lấy x1,x2,x3 chia cho 2</li>
+                            <li>Nếu x1 hoặc x2 hoặc x3 chia hết cho 2 (x%2 === 0), z1 tăng thêm 1</li>
+                            <li>Nếu x1 hoặc x2 hoặc x3 không chia hết cho 2 (x%2 !== 0), z2 tăng thêm 1</li>
+                            <li>Xuât giá trị của z1,z2 ra input.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100 ">
+                        <span class=" d-block fw-bold m-2"> OUTPUT</span>
+                        <ul>
+                            <li>Có bao nhiêu số chắn và số lẻ trong 3 số được nhập.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label d-block">Nhập số thứ 1</label>
+                <input type="text" class="form-control" id="soThuNhatBt3"/>
+                <label class="form-label d-block">Nhập số thứ 2</label>
+                <input type="text" class="form-control" id="soThuHaiBt3"/>
+                <label class="form-label d-block">Nhập số thứ 3</label>
+                <input type="text" class="form-control" id="soThuBaBt3"/>
+                <label class="form-label d-block">Số chẵn, số lẻ</label>
+                <input type="text" class="form-control" id="soChanSoLe"/>
+                <button class=" mt-4 btn btn-danger" id="chanLe">Tính chẵn lẻ</button>
+            </div>
+        </div>
+
+        <!-- bài 4 -->
+
+        <div class="col-sm-10">
+            <h4 class="mb-3 bg-success p-2 fw-bold text-white">Bài tập 4 : Xác định tam giác</h4>
+            <div class="row mb-2">
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100 ">
+                        <span class=" d-block fw-bold m-2 " >INPUT :</span>
+                        <ul>
+                            <li>Giá trị cạnh thứ nhất</li>
+                            <li>Giá trị cạnh thứ hai</li>
+                            <li>Giá trị cạnh thứ ba</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100">
+                        <span class=" d-block fw-bold m-2 "> PROCESS</span>
+                        <ul>
+                            <li>Tạo biến x1,x2,x3 và gán giá trị tương ứng với giá trị cạnh thứ 1, cạnh thứ 2, cạnh thứ 3.</li>
+                            <li>Kiểm tra xem đây có phải là ba cạnh của tam giác: Tổng 2 cạnh luôn lớn hơn cạnh còn lại, hiệu 2 cạnh luôn nhỏ hơn cạnh còn lại</li>
+                            <li>So sánh độ dài các cạnh</li>
+                            <li>Có 1 cặp cạnh bằng nhau : tam giác cân</li>
+                            <li>Độ dài 3 cạnh bằng nhau : tam giác đều</li>
+                            <li>Độ dài 3 cạnh thỏa mãn định lý pytago : tam giác vuông</li>
+                            <li>Xuất ra tính chất của tam giác</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100 ">
+                        <span class=" d-block fw-bold m-2"> OUTPUT</span>
+                        <ul>
+                            <li>Tính chất của tam giác : vuông, cân, đều.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label d-block">Nhập cạnh thứ 1 của tam giác</label>
+                <input type="text" class="form-control" id="canhThuNhat"/>
+                <label class="form-label d-block">Nhập cạnh thứ 2 của tam giác</label>
+                <input type="text" class="form-control" id="canhThuHai"/>
+                <label class="form-label d-block">Nhập cạnh thứ 3 của tam giác</label>
+                <input type="text" class="form-control" id="canhThuBa"/>
+                <label class="form-label d-block">Tam giác</label>
+                <input type="text" class="form-control" id="tamGiac"/>
+                <button class=" mt-4 btn btn-danger" id="xacDinhTamGiac">Xác định tam giác</button>
+            </div>
+        </div>
+
+        <!-- Js - buôi3 -->
+
+        <!-- bài 1 -->
+
+        <div class="col-sm-10">
+            <h1 class=" mb-4 text-uppercase bg-info p-2 fw-bold">Bài tập JS buổi 3</h1>
+            <!-- bài 1 -->
+            <h4 class="mb-3 bg-success p-2 fw-bold text-white">Bài tập 1 : Quản lý tuyển sinh</h4>
+            <div class="row mb-2">
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100 ">
+                        <span class=" d-block fw-bold m-2 " >INPUT :</span>
+                        <ul>
+                            <li>Giá trị điểm chuẩn</li>
+                            <li>Giá trị điểm môn thi 1</li>
+                            <li>Giá trị điểm môn thi 2</li>
+                            <li>Giá trị điểm môn thi 3</li>
+                            <li>Giá trị khu vực dự thi</li>
+                            <li>Giá trị đối tượng dự thi</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100">
+                        <span class=" d-block fw-bold m-2 "> PROCESS</span>
+                        <ul>
+                            <li>Tạo biến x1,x2,x3,x4,x5,x6</li>
+                            <li>Gán giá trị điểm chuẩn cho x1</li>
+                            <li>Gán giá trị điểm môn thi 1 cho x2</li>
+                            <li>Gán giá trị điểm môn thi 2 cho x3</li>
+                            <li>Gán giá trị điểm môn thi 3 cho x4</li>
+                            <li>Gán giá trị khu vực dự thi cho x5</li>
+                            <li>Gán giá trị đối tượng dự thi cho x6</li>
+                            <li>Khai báo biến y,z</li>
+                            <li>Giá trị y(điểm ưu tiên) = điểm của khu vực dự thi + điểm của đối tượng dự thi </li>
+                            <li>Giá trị z(tổng điểm) = y + x2 + x3 + x4</li>
+                            <li>So sánh giá trị của z với điểm chuẩn</li>
+                            <li>Xuât ra kết quả tuyển sinh của thí sinh</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100 ">
+                        <span class=" d-block fw-bold m-2"> OUTPUT</span>
+                        <ul>
+                            <li>Kết quả tuyển sinh của thí sinh</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label d-block">Nhập điểm chuẩn của trường</label>
+                <input type="text" class="form-control" id="diemChuan"/>
+                <label class="form-label d-block">Nhập điểm thi môn thứ 1</label>
+                <input type="text" class="form-control" id="diemMon1"/>
+                <label class="form-label d-block">Nhập điểm thi môn thứ 2</label>
+                <input type="text" class="form-control" id="diemMon2"/>
+                <label class="form-label d-block">Nhập điểm thi môn thứ 3</label>
+                <input type="text" class="form-control" id="diemMon3"/>
+                <label class="form-label d-block">Chọn khu vực dự thi</label>
+                <select id="khuVucDuThi" class=" form-select mb-3">
+                    <option value="A">Khu vực A</option>
+                    <option value="B">Khu vực B</option>
+                    <option value="C">Khu vực C</option>
+                    <option value="X">Không thuộc khu vực ưu tiên</option>
+                </select>
+                <label class="form-label d-block">Chọn đối tượng dự thi</label>
+                <select id="doiTuongDuThi" class=" form-select mb-3">
+                    <option value="1">Đối tượng 1</option>
+                    <option value="2">Đối tượng 2</option>
+                    <option value="3">Đối tượng 3</option>
+                    <option value="0">Không thuộc đối tượng ưu tiên</option>
+                </select>
+                <label class="form-label d-block">Tổng điểm thi</label>
+                <input type="text" class="form-control" id="tongDiemThi"/>
+                <label class="form-label d-block">Kết quả</label>
+                <input type="text" class="form-control" id="ketQuaTuyenSinh"/>
+                <button class=" mt-4 btn btn-danger" id="tinhKetQuaTuyenSinh">Kết quả tuyển sinh</button>
+            </div>
+        </div>
+        
+        <!-- bài 2 -->
+
+        <div class="col-sm-10">
+            <h4 class="mb-3 bg-success p-2 fw-bold text-white">Bài tập 2 : Tính tiền điện</h4>
+            <div class="row mb-2">
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100 ">
+                        <span class=" d-block fw-bold m-2 " >INPUT :</span>
+                        <ul>
+                            <li>Giá trị số điện sử dụng</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100">
+                        <span class=" d-block fw-bold m-2 "> PROCESS</span>
+                        <ul>
+                            <li>Tạo biến x,y</li>
+                            <li>Gán giá trị số điện sử dụng cho x1</li>
+                            <li>So sánh x với bảng tính giá điện</li>
+                            <li>x1 < 50 thì y = x1*500</li>
+                            <li>x1 >= 50 && x1 < 100 thì y = 50*500 + (x1 - 50)*650</li>
+                            <li>x1 >= 100 && x1 < 200 thì y = 50*500 + 50*650 + (x1 - 100)*850</li>
+                            <li>x1 >= 200 && x1 < 350 thì y = 50*500 + 50*650 + 100*850 + (x1 - 200)*1100</li>
+                            <li>x1 >= 350 thì y = 50*500 + 50*650 + 100*850 + 150*1100 + (x1 - 350)*1300</li>
+                            <li>Xuất ra input giá trị tiền điện phải trả</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100 ">
+                        <span class=" d-block fw-bold m-2"> OUTPUT</span>
+                        <ul>
+                            <li>Tiền điện phải thanh toán</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label d-block">Nhập số điện tiêu thụ</label>
+                <input type="text" class="form-control" id="dienTieuThu"/>
+                <label class="form-label d-block">Tiền điện phải trả</label>
+                <input type="text" class="form-control" id="tienDien"/>
+                <button class=" mt-4 btn btn-danger" id="tinhTienDien">Tính tiền điện</button>
+            </div>
+        </div>
+
+        <!-- bài 3 -->
+
+        <div class="col-sm-10">
+            <h4 class="mb-3 bg-success p-2 fw-bold text-white">Bài tập 3 : Tính thuế thu nhập cá nhân</h4>
+            <div class="row mb-2">
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100 ">
+                        <span class=" d-block fw-bold m-2 " >INPUT :</span>
+                        <ul>
+                            <li>Giá trị tổng thu nhập hằng năm</li>
+                            <li>Giá trị số người phụ thuộc</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100">
+                        <span class=" d-block fw-bold m-2 "> PROCESS</span>
+                        <ul>
+                            <li>Tạo biến x,y,z</li>
+                            <li>Gán giá trị tổng thu nhập hằng năm cho x</li>
+                            <li>Gán giá trị số người phụ thuộc cho y</li>
+                            <li>Tính số tiền chịu thuế(z) theo công thức ở đề bài</li>
+                            <li>Tính thuế TNCN phải đóng</li>
+                            <li>z < 60 thì TNCN = z*0.05</li>
+                            <li>z > 60 && z <= 120 thì TNCN = z*0.1</li>
+                            <li>z > 120 && z <= 210 thì TNCN = z*0.15</li>
+                            <li>z > 210 && z <= 384 thì TNCN = z*0.2</li>
+                            <li>z > 384 && z <= 624 thì TNCN = z*0.25</li>
+                            <li>z > 624 && z <= 960 thì TNCN = z*0.3</li>
+                            <li>z > 960 thì TNCN = z*0.35</li>
+                            <li>Xuất ra input giá trị tiền thuế TNCN phải đóng</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100 ">
+                        <span class=" d-block fw-bold m-2"> OUTPUT</span>
+                        <ul>
+                            <li>Tiền thuế TNCN phải đóng</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label d-block">Nhập tổng thu nhập 1 năm (đơn vị : triệu VNĐ)</label>
+                <input type="text" class="form-control" id="tongThuNhap"/>
+                <label class="form-label d-block">Nhập số người phụ thuộc</label>
+                <input type="text" class="form-control" id="soNguoiPhuThuoc"/>
+                <label class="form-label d-block">Thuế thu nhập cá nhân (đơn vị : triệu VNĐ)</label>
+                <input type="text" class="form-control" id="thueTNCN"/>
+                <button class=" mt-4 btn btn-danger" id="tinhThue">Tính thuế TNCN</button>
+            </div>
+        </div>
+
+        <!-- bài 4 -->
+        <div class="col-sm-10">
+            <h4 class="mb-3 bg-success p-2 fw-bold text-white">Bài tập 4 : Tính tiền cáp</h4>
+            <div class="row mb-3">
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100 ">
+                        <span class=" d-block fw-bold m-2 " >INPUT :</span>
+                        <ul>
+                            <li>Loai khach hang</li>
+                            <li>Số kết nối (đối với khách hàng doanh nghiệp)</li>
+                            <li>Số kênh cao cấp</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100">
+                        <span class=" d-block fw-bold m-2 "> PROCESS</span>
+                        <ul>
+                            <li>Nêu khách hàng là cá nhân tính tiền cáp theo công thức</li>
+                            <li>tienCap = 4.5 + 20.5 + kenhCaoCap*7.5</li>
+                            <li>Nêu khách hàng là doanh nghiệp tính tiền cáp theo công thức</li>
+                            <li>Nếu số kênh kết nối <= 10 : tính tiền cáp theo công thức</li>
+                            <li>tienCap = 15 + 75*soKetNoi + 50*kenhCaoCap</li>
+                            <li>Nếu số kênh kết nối > 10 : tính tiền cáp theo công thức</li>
+                            <li>tienCap = 15 + 75*10 + 5*(soKetNoi - 10) + 50*kenhCaoCap</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-4">
+                    <div class="bg-warning border border-2 border-dark p-1 h-100 ">
+                        <span class=" d-block fw-bold m-2"> OUTPUT</span>
+                        <ul>
+                            <li>Tiền cáp phải đóng của cá nhân hoặc của doanh nghiệp</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class=" fw-bold fs-5">Chọn loại khách hàng :</p>
+            </div>
+            <div id="customer" class=" ">
+                <div class=" form-check mb-3">
+                    <input type="radio" class=" form-check-input" name="customer" id="khachHangCaNhan" value="caNhan" checked >
+                    <label for="khachHangCaNhan" class="form-check-label" id="label_kh_caNhan">Khách hàng cá nhân</label>
+                </div>
+                <div class=" form-check mb-3">
+                    <input type="radio" class=" form-check-input" name="customer" id="khachHangDoanhNghiep" value="doanhNghiep" >
+                    <label for="khachHangDoanhNghiep" class="form-check-label" id="label_kh_doanhNghiep">Khách hàng doanh nghiệp</label>
+                </div>
+            </div>
+            <div class="mb-3" id="caNhan">
+                <label class="form-label d-block">Nhập mã khách hàng</label>
+                <input type="text" class="form-control" id="maKhachHangCaNhan"/>
+                <label class="form-label d-block">Số kênh cao cấp của bạn</label>
+                <input type="text" class="form-control" id="soKenhCaoCapCaNhan"/>
+                <label class="form-label d-block">Số kết nối của bạn</label>
+                <input type="text" class="form-control" disabled/>
+                <label class="form-label d-block">Tiền cáp của bạn là :</label>
+                <input type="text" class="form-control" id="tienCapCaNhan"/>
+                <button class=" mt-4 btn btn-danger" id="tinhTienCapCaNhan">Tính tiền cáp</button>
+            </div>
+            <div class="mb-3" id="doanhNghiep">
+                <label class="form-label d-block">Nhập mã khách hàng</label>
+                <input type="text" class="form-control" id="maKhachHangDoanhNghiep"/>
+                <label class="form-label d-block">Số kênh cao cấp của bạn</label>
+                <input type="text" class="form-control" id="soKenhCaoCapDoanhNghiep"/>
+                <label class="form-label d-block">Số kết nối của bạn</label>
+                <input type="text" class="form-control" id="soKetNoiDoanhNghiep"/>
+                <label class="form-label d-block">Tiền cáp của doanh nghiệp bạn là : </label>
+                <input type="text" class="form-control" id="tienCapDoanhNghiep"/>
+                <button class=" mt-4 btn btn-danger" id="tinhTienCapDoanhNghiep">Tính tiền cáp</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
